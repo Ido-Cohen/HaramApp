@@ -1,0 +1,19 @@
+<div class="card bg-base-100 mx-auto w-1/2 p-10 mt-10 shadow-xl">
+<h1 class="font-extrabold text-purple-600">{{title}}</h1>
+
+
+<ul class="list">
+  @for (member of members(); track member.id) {
+    <li class="list-row items-center">
+      <img src="/user.png" alt="user avatar" class="rounded-box size-12"/>
+      <div>
+        {{member.userName}}
+      </div>
+    </li>
+  }
+</ul>
+</div>
+
+
+
+<button class="btn btn-primary">Add Member</button>
